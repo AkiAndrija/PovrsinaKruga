@@ -1,0 +1,29 @@
+body{
+background-color:lightblue;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+h1{
+text-shadow: 2px 2px 5px red;
+}
+
+button{
+  font-family: "Times New Roman", Times, serif;
+   background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+p{
+color : #04AA6D;
+}

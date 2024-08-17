@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PovrsinaKruga</title>
+    <link href="index.css" rel="stylesheet">
+    <script>
+        function izracunajPovrsinu() {
+            const poluprecnik = parseFloat(document.getElementById("poluprecnik").value);
+            if (poluprecnik > 0) {
+                const povrsina = Math.PI * poluprecnik ** 2;
+                document.getElementById("rezultat").textContent = `Površina kruga je ${povrsina.toFixed(2)} kvadratnih jedinica.`;
+            } else {
+                document.getElementById("rezultat").textContent = "Unesite validan pozitivan poluprečnik.";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Izračunavanje površine kruga</h1>
+<label for="poluprecnik">Unesite poluprečnik kruga:</label>
+<input type="number" id="poluprecnik">
+<button onclick="izracunajPovrsinu()">Izračunaj</button>
+<p id="rezultat"></p>
+<img src="povrsinkurga.jpg" alt="Ovde treba da stoji slika">
+</body>
+</html>
